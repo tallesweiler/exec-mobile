@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="salario">Salário (R$)</string>
+    <string name="texto_salario">Salário mensal</string>
+    <string name="gastos">Gastos (R$)</string>
+    <string name="texto_gastos">Gastos com saúde e educação</string>
+    <string name="dependentes">Dependentes</string>
+    <string name="texto_dependentes">Nº de dependentes</string>
+    <string name="seu_imposto_de_renda_mensal">seu imposto de renda mensal:</string>
+    <string name="RS0">R$ 0.00</string>
+    <string name="calcular">calcular</string>
+</resources>
