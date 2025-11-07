@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/azul"
+        android:id="@+id/banner"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/cachorro_svg"
+        android:id="@+id/imagemCachorro"
+        app:layout_constraintBottom_toBottomOf="@id/banner"
+        app:layout_constraintEnd_toEndOf="@id/banner"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="@id/banner"
+        app:layout_constraintTop_toTopOf="@id/banner"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <ImageView
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:src="@drawable/gato_svg"
+        android:id="@+id/imagemGato"
+        app:layout_constraintBottom_toBottomOf="@id/banner"
+        app:layout_constraintEnd_toEndOf="@id/banner"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="@id/banner"
+        app:layout_constraintTop_toTopOf="@id/banner"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text=""
+        android:textSize="20dp"
+        android:id="@+id/nomeUsuario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/banner"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text=""
+        android:textSize="18dp"
+        android:gravity="center"
+        android:id="@+id/frase"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <View
+        android:layout_width="130dp"
+        android:layout_height="3dp"
+        android:background="@color/azul"
+        app:layout_constraintTop_toBottomOf="@id/frase"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="GERAR OUTRA FRASE"
+        android:id="@+id/botao_frase"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="@color/azul"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
